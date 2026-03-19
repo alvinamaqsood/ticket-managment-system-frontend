@@ -8,8 +8,8 @@ function App() {
   const addTicket = (ticket) => setTickets([...tickets, ticket]);
 
   return (
-    <div className="container-fluid p-0">
-      <h2 className="text-center my-4">Ticket Management System</h2>
+    <div className="container-fluid p-0" style={{ backgroundColor: '#5c769e' }}>
+      <h2 className="text-center my-4" style={{ color: 'white' }}>Ticket Management System</h2>
       <div className="px-3">
         <TicketForm onAddTicket={addTicket} />
         <TicketList tickets={tickets} setTickets={setTickets} />

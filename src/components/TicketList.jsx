@@ -164,7 +164,7 @@ function TicketList({ tickets, setTickets }) {
                 <h5 className="modal-title">Ticket Detail</h5>
                 <button className="btn-close" onClick={() => setShowDetail(false)}></button>
               </div>
-              <div className="modal-body">
+              <div className="modal-body ">
                 <p><strong>Name:</strong> {selectedTicket.name}</p>
                 <p><strong>Email:</strong> {selectedTicket.email}</p>
                 <p><strong>Subject:</strong> {selectedTicket.subject}</p>
@@ -173,7 +173,7 @@ function TicketList({ tickets, setTickets }) {
                 <p><strong>Created At:</strong> {new Date(selectedTicket.createdAt).toLocaleString()}</p>
               </div>
               <div className="modal-footer">
-                <button className="btn btn-secondary" onClick={() => setShowDetail(false)}>Close</button>
+                <button className="btn btn-secondary" style={{ color: 'white' }} onClick={() => setShowDetail(false)}>Close</button>
               </div>
             </div>
           </div>
